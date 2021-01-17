@@ -1,0 +1,202 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color:  #EDE7F6;
+   font-family: sans-serif; 
+}
+.header{
+    /* height: 65px;
+    width: 100%; */
+    background-color: #1A237E;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 1%;
+    /* height: 15vh; */
+    padding: 20px 7px;
+
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* padding-bottom: 10%; */
+}
+.miraLogo{
+    height: 40px;
+    width: 40px;
+    margin: auto;
+    margin-left: 10px;
+}
+.miraTechDiv{
+    flex: 2;
+      display:flex;
+      flex-direction: row;
+      
+}
+/* .miraTechDiv div{
+    margin-right: 15px;
+} */
+.miraTechDiv a{
+    display: block;
+}
+.miraTech{
+    color: white;
+    font-weight: 28px; 
+    font-size: 23px;
+    /* position: absolute;
+    top: 19px; */
+    font-family: sans-serif;
+    /* display: inline-block;
+    margin-bottom: 20px; */
+    
+    /* margin-top: 20px; */
+    /* margin-right: 15px; */
+    margin-top: 8px;
+    margin-left: 12px;
+}
+nav{
+    /* float: right; */
+}
+.register{
+    display: block;
+text-decoration: none;
+/* list-style: none;
+margin-top: -50px;
+right: 45px;
+position: absolute; */
+color: white;
+font-size: 15px;
+margin-top: 10px;
+margin-right: 20px;
+
+}
+.login-section{
+    /* flex: 1; */
+    text-align: center;
+    height:35vh;  
+}
+
+.body-logo{
+    width: 60px;
+    height: 60px;
+    display: block;
+    margin: auto;
+}
+h1{
+    text-align: center;
+    color: #1A237E;
+    /* margin-top: 30px;
+    margin-right: 30px; */
+    font-weight: lighter;
+}
+.login-to-account{
+    text-align: center;
+    color: black;
+}
+.loginbox{
+    width: 50vw;
+    /* height: 235px; */
+    background-color: white;
+    /* top: 50%;
+    left: 35%; */
+    /* position: absolute; */
+    border-radius: 8px;
+    margin: auto;
+    box-shadow: 0 0 5px 5px rgb(196, 193, 193);
+    box-sizing: border-box;
+    height: 60vh;
+    display:  flex;
+}
+ /* input{
+     outline: none;
+     border: none;
+     border-bottom: 2px solid black;
+/* } *2 */
+.form-field{
+    padding: 20px 20px;
+    box-sizing: border-box;
+}
+.txt-field{
+    position: relative;
+    border-bottom: 1px solid #adadad;
+    margin: 0 20px;
+}
+.txt-field input{
+    width: 100%;
+    height: 60px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: none;
+}
+.txt-field label{
+     position: absolute;
+     top: 70%;
+     left: 5px;
+     color: black; 
+     transform: translateY(-50%);
+     pointer-events: none;
+     transition: .5s;
+}
+.txt-field span::before{
+    content: '';
+    position: absolute;
+    top: 61px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: #1A237E; 
+    transition: .2s;
+} 
+ .txt-field input:focus ~ label,
+.txt-field input:valid ~ label{
+    top: -5px;
+    color: #1A237E;
+    font-size: 13px;
+}
+.txt-field input:focus ~ span::before,
+.txt-field input:valid ~ span::before{
+    width: 100%;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4%;
+}
+.login{
+    /* /* margin-left: 80px; */
+    /* margin-top: 20px;  */
+    padding: 15px 0;
+    width: 30%;
+    color: white;
+    background-color: #1A237E;
+    border: none;
+    border-radius: 2px;
+    font-size: 16px;
+    box-shadow: 0 0 2px 2px grey;
+}
+.pass{
+    text-align: center;
+    color: #1A237E;
+    font-size: 14px;
+}
+@media only screen and (max-width: 600px) { 
+    .header{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .loginbox{
+        width: 50vw;
+        margin: auto;
+    }
+    .button{
+        margin-top: 7%;
+    }
+    .login{
+        width: 40%;
+    }
+ }
