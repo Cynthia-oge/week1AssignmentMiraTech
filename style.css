@@ -96,7 +96,7 @@ h1{
     color: black;
 }
 .loginbox{
-    width: 50vw;
+    width: 30vw;
     /* height: 235px; */
     background-color: white;
     /* top: 50%;
@@ -106,7 +106,7 @@ h1{
     margin: auto;
     box-shadow: 0 0 5px 5px rgb(196, 193, 193);
     box-sizing: border-box;
-    height: 60vh;
+    height: 50vh;
     display:  flex;
 }
  /* input{
